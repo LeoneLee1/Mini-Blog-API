@@ -21,7 +21,7 @@ class PostController extends Controller
             ], 200);
         } catch(Exception $e){
             return response()->json([
-                'success' => true,
+                'success' => false,
                 'message' => 'Failed load posts data',
                 'error' => $e->getMessage(),
             ], 500);
@@ -41,7 +41,7 @@ class PostController extends Controller
             ], 200);
         } catch(Exception $e){
             return response()->json([
-                'success' => true,
+                'success' => false,
                 'message' => 'Failed create posts',
                 'error' => $e->getMessage(),
             ], 500);
@@ -58,7 +58,7 @@ class PostController extends Controller
             ], 200);
         } catch(Exception $e){
             return response()->json([
-                'success' => true,
+                'success' => false,
                 'message' => 'Failed load posts id ' . $id,
                 'error' => $e->getMessage(),
             ], 500);
@@ -80,7 +80,7 @@ class PostController extends Controller
             ], 200);
         } catch(Exception $e){
             return response()->json([
-                'success' => true,
+                'success' => false,
                 'message' => 'Failed update data posts id ' . $id,
                 'error' => $e->getMessage(),
             ], 500);
@@ -97,7 +97,7 @@ class PostController extends Controller
             ], 200);
         } catch(Exception $e){
             return response()->json([
-                'success' => true,
+                'success' => false,
                 'message' => 'Failed delete data posts id ' . $id,
                 'error' => $e->getMessage(),
             ], 500);
